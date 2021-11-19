@@ -18,6 +18,7 @@ while True:
         avds = input("Nota da AVDS")
         email = input("Insira o e-mail do aluno")
         campus = input("Insira o campus do aluno")
+        endereçoresidencial = input ("Insira o endereço do aluno")
         nova.append(id)
         nova.append(nome)
         nova.append(idade)
@@ -28,6 +29,7 @@ while True:
         nova.append(avds)
         nova.append(email)
         nova.append(campus)
+        nova.append(endereçoresidencial)
         listas.append(nova)
         
     elif op == 2:
