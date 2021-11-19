@@ -1,0 +1,43 @@
+listas = [[]]  # uma lista de lista
+
+while True:
+    print("1-Cadastrar pessoa")
+    print("2-Lista Cadastros")
+    print("3-Procurar Pessoa Especifica")
+    print("4-Remover uma pessoa")
+    op = int(input())  # Escolha da opcao
+    if op == 1:
+        nova = []  # cria uma lista para adicionar o id, nome e idade da pessoa
+        id = input("Id da pessoa")
+        nome = input("Digite o nome da pessoa")
+        idade = input("Idade da pessoa")
+        av1 = input("Nota da AV1")
+        av2 = input("Nota da AV2")
+        av3 = input("Nota da AV3")
+        avd = input("Nota da AVD")
+        avds = input("Nota da AVDS")
+        email = input("Insira o e-mail do aluno")
+        campus = input("Insira o campus do aluno")
+        nova.append(id)
+        nova.append(nome)
+        nova.append(idade)
+        nova.append(av1)
+        nova.append(av2)
+        nova.append(av3)
+        nova.append(avd)
+        nova.append(avds)
+        nova.append(email)
+        nova.append(campus)
+        listas.append(nova)
+        
+    elif op == 2:
+            print(nome)
+    
+    elif op == 3:
+    for mostrar in listas:
+        try:
+            print("Nome: %s - Idade: %s - ID: %s"%(mostrar[1],mostrar[2],mostrar[0]))
+        except:
+            print("Essa pessoa não possui algum dos valores a seguir: Nome, Idade, ID")
+    elif op == 4:
+        list.remove()
